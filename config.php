@@ -7,8 +7,8 @@
 
     #VARIAVEIS
     define('NOME_SITE','Facebook');
-    define('INCLUDE_PATH','http://localhost/rede/');
-    define('INCLUDE_PATH_LOGIN','http://localhost/rede/login');
+    define('INCLUDE_PATH','http://localhost/facebook_clone/');
+    define('INCLUDE_PATH_LOGIN','http://localhost/facebook_clone/login');
     define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
     define('BASE_DIR_PAINEL',__DIR__.'/painel');
 
