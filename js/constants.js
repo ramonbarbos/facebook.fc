@@ -1,0 +1,1 @@
+var include_path = "http://localhost/rede/"

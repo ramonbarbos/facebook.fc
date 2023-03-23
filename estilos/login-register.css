@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0F2F5;
+
+}
+
+.container-page{
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    
+}
+
+.content-pagina{
+    width: 100%;
+    display: flex;
+    height: 100%;
+
+}
+.page-1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.img-cont{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+}
+.img-cont img{
+    width: 100%;
+    height: 100%;
+   
+}
+.page-2
+{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.conteiner-form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    width: 400px;
+    box-shadow:0px 0px 7px 1px  rgb(199, 199, 199);
+
+}
+.conteiner-form form{
+    margin: 18px;
+}
+.conteiner-form .form-control{
+    height: 55px;
+}
+.conteiner-form .btn.login{
+    background-color: #1B74E4;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+
+}
+.conteiner-form .esqueceu{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-decoration: none;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(232, 232, 232);
+}
+.container-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.conteiner-form .btn.register   {
+    background-color: #42B72A;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+
+}
