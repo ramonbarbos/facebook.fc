@@ -96,3 +96,21 @@ body{
     height: 50px;
 
 }
+@media only screen and (max-width:1000px) {
+  
+    .page-1{
+        width:0%;
+        height: 100%;
+        display: none;
+        align-items: center;
+    }
+    .page-2{
+        width:100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+  
+
+  }
+  

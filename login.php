@@ -36,39 +36,39 @@
                             <form method="post">
                             <?php
 
-if(isset($_POST['acao'])){
+                              if(isset($_POST['acao'])){
 
-    //Obtendo as informações do formulario
-    $user = $_POST['user'];
-    $password = $_POST['password'];
- 
-      //Fazendo a consulta no banco de dados para a Authenticação
-      $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND password = ? ");
-      $sql->execute(array($user,$password));
+                                  //Obtendo as informações do formulario
+                                  $user = $_POST['user'];
+                                  $password = $_POST['password'];
+                              
+                                    //Fazendo a consulta no banco de dados para a Authenticação
+                                    $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.usuarios` WHERE user = ? AND password = ? ");
+                                    $sql->execute(array($user,$password));
 
-      if($sql->rowCount() == 1){
-          //Pegando informação no banco de dados
-          $info = $sql->fetch();
-          //Atribuindo as informações que esta no banco de dados para a Sessão
-          $_SESSION['login'] = true;
-          $_SESSION['id'] = $info['id'];
-          $_SESSION['user'] = $user;
-          $_SESSION['password'] = $password;
-          $_SESSION['cargo'] = $info['cargo'];
-          $_SESSION['nome'] = $info['nome'];
-          $_SESSION['img'] = $info['img'];
-          echo '<h6>Logado</h6>';
-        
-              header('Location: '.INCLUDE_PATH);
-          
-          die();
-      }else{
-          echo '<div class="alert alert-danger" role="alert"><h6>Usuario ou senha incorreto.</h6></div>';
-      }
+                                    if($sql->rowCount() == 1){
+                                        //Pegando informação no banco de dados
+                                        $info = $sql->fetch();
+                                        //Atribuindo as informações que esta no banco de dados para a Sessão
+                                        $_SESSION['login'] = true;
+                                        $_SESSION['id'] = $info['id'];
+                                        $_SESSION['user'] = $user;
+                                        $_SESSION['password'] = $password;
+                                        $_SESSION['cargo'] = $info['cargo'];
+                                        $_SESSION['nome'] = $info['nome'];
+                                        $_SESSION['img'] = $info['img'];
+                                        echo '<h6>Logado</h6>';
+                                      
+                                            header('Location: '.INCLUDE_PATH);
+                                        
+                                        die();
+                                    }else{
+                                        echo '<div class="alert alert-danger" role="alert"><h6>Usuario ou senha incorreto.</h6></div>';
+                                    }
 
-}
+                              }
 
-?>  
+                              ?>  
                                 <div class="mb-3">
                                   <input type="text" class="form-control" placeholder="Login" id="user" name="user">
                                 </div>

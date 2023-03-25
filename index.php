@@ -19,10 +19,10 @@ include('config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--CSS -->
-    <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>estilos/style.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>estilos/style.css"  type="text/css">
     <!-- Bootstrap CSS -->
     
-    <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>_bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH?>_bootstrap/css/bootstrap.css"  type="text/css">
     
     <!--ICON GOOGLE-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -85,7 +85,7 @@ include('config.php');
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<?php echo INCLUDE_PATH?>_bootstrap/js/popper.min.js"></script>
+    <script src="<?php echo INCLUDE_PATH?>_bootstrap/js/popper.min.js" ></script>
    <script src="<?php echo INCLUDE_PATH?>_bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

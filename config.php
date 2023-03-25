@@ -5,12 +5,21 @@
     session_start();
 
 
-    #VARIAVEIS
+    #VARIAVEIS do VirtualHost 
+    /*
     define('NOME_SITE','Facebook');
-    define('INCLUDE_PATH','http://localhost/facebook_clone/');
-    define('INCLUDE_PATH_LOGIN','http://localhost/facebook_clone/login');
+    define('INCLUDE_PATH','http://facebook.fc/');
+    define('INCLUDE_PATH_LOGIN','http://facebook.fc/login');
     define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
     define('BASE_DIR_PAINEL',__DIR__.'/painel');
+*/
+    #VARIAVEIS
+    define('NOME_SITE','Facebook');
+    define('INCLUDE_PATH','http://localhost/facebook.fc/');
+    define('INCLUDE_PATH_LOGIN','http://localhost/facebook.fc/login');
+    define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
+    define('BASE_DIR_PAINEL',__DIR__.'/painel');
+   
 
     #VARIAVEIS DO BANCO DE DADOS
     define('HOST','localhost');
