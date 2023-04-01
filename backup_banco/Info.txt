@@ -1,0 +1,3 @@
+Esse é o backup atual do banco de dados MYSQL 
+
+Para utiliza-lo basta importar o phpmyadmin!
